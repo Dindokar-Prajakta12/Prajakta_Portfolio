@@ -1,0 +1,70 @@
+/* Container for the About section */
+.about-container {
+    padding: 2rem;
+    /* background-color: #fff; */
+    color: #333;
+    background-color: hwb(290 87% 3%);
+  }
+  
+  /* About heading */
+  .about-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: hwb(277 29% 2%);
+  }
+  
+  /* About paragraph */
+  .about-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Education section */
+  .education h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Education cards container */
+  .education-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  /* Individual card */
+  .card {
+    background-color: hwb(295 69% 1%);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 1.5rem); /* Responsive: 3 cards per row */
+    min-width: 250px;
+  }
+  
+  /* Card content */
+  .card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #150a0a;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #120f0f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(50% - 1.5rem); /* 2 cards per row on tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 1 100%; /* 1 card per row on mobile */
+    }
+  }
+  

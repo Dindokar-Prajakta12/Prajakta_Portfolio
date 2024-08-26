@@ -1,0 +1,99 @@
+/* Container for the home section */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 100%; 
+    background-color: hwb(290 87% 3%); /* Adjust the background as needed */
+  }
+  
+  /* Left column: text content */
+  .home-content {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: "DM Serif Text", serif;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: hsl(0, 11%, 11%);
+    text-align: justify;
+  }
+  
+  /* Buttons */
+  .home-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .primary-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .secondary-btn {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #495057;
+  }
+  
+  /* Right column: photograph */
+  .home-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home-photo img {
+    max-width: 100%;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px; /* Optional: Rounded corners for the photo */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .home-photo {
+      width: 100%;
+    }
+  
+    .home-photo img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+  

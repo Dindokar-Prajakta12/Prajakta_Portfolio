@@ -1,0 +1,83 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    background-color: hwb(290 87% 3%);
+    /* background-color: transparent; */
+    /* position: fixed; */
+    /* left: 0%; */
+  }
+  
+  /* Logo */
+  .navbar-logo img {
+    height: 50px;
+    width: 200px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 2.5rem;
+    font-weight: bolder;
+    /* font-size: xx-large; */
+  }
+  
+  /* Links */
+  .navbar-link {
+    /* color: #fff; */
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+
+  }
+  
+  .navbar-link:hover {
+    color: hwb(308 7% 5%);
+    transform: scale(1.5);
+  }
+  
+  /* Burger menu for mobile */
+  .navbar-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar-burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 25%;
+      position: absolute;
+      top: 60px;
+      /* left: 0; */
+      right: 0;
+      background-color: hwb(290 87% 3%);
+      padding: 1rem;
+    }
+  
+    .navbar-burger {
+      display: flex;
+    }
+  }
+  
+  /* Active State for Burger Menu */
+  .navbar-burger.active + .navbar-menu {
+    display: flex;
+  }
+
+  
+  
